@@ -1,65 +1,62 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-	<form action="" method="get">
+    <form action="/submit" method="post">
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
 
-	 <label for="name"> Name </label>
-	 <input type="text" placeholder="Name" id="name" required  />
-	<!--  Email  -->
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
 
-	 <label for="email"> Email  </label>
-	 <input type="email" placeholder="Email" id="email" required  />
+        <!-- Gender -->
+        <label>Gender</label>
+        <label for="gender_m">Male</label>
+        <input type="radio" id="gender_m" name="gender" value="male" required>
+        <label for="gender_f">Female</label>
+        <input type="radio" id="gender_f" name="gender" value="female" required>
 
-	<!-- Gender -->
+        <!-- Car Brands -->
+        <label for="cars">Car Brands</label>
+        <select id="cars" name="cars" required>
+            <option value="">--Please choose an option--</option>
+            <option value="i10">i10</option>
+            <option value="eon">Eon</option>
+            <option value="santro">Santro</option>
+        </select>
 
-	 <label for="gender"> Gender </label>
-	 <input type="radio" id="gender_m" name="gender" required  /> Male
-	 <input type="radio" id="gender_f" name="gender" required  /> Female
+        <!-- Age -->
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Age" required>
 
-	<!-- Car Brand  -->
-	 <select id="cars"  required>
-		<option > i 10 </option>
-		<option> Eon </option>
-		<option> santro </option>
-	</select>
-     <!-- age -->
-	 <label for="age"> Age </label>
-	 <input  type="number" id="age" placeholder="Age" required />
+        <!-- DOB -->
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob" required>
 
-	<!-- DOB  -->
-	 <label for="dob"> DOB </label>
-	 <input  type="Date" id="dob" required />
+        <!-- Phone Number -->
+        <label for="tel">Phone Number</label>
+        <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
 
-	<!--  Phone Number -->
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
 
-	 <input type="Tel" id="tel" placeholder="xxx-xxx-xxxx" />
+        <!-- Checkbox for TOS -->
+        <label for="tos">
+            <input type="checkbox" id="tos" name="tos" required> I agree to the TOS
+        </label>
 
-	<!-- Password  -->
-	 <label for="password"> Password </label>
-	 <input type="Password" id="password" placeholder="Password" required  />
-
-	<!--Checkbox  -->
-
-	
-
-
-	<input type="Checkbox" id="tos" required /> I agree to the TOS
-	<input type="submit" value="Submit">
-		
-	</form>
-
-	
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
-
 </html>
