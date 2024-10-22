@@ -1,2 +1,19 @@
 
-/* Your CSS Code here. */
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: #f4f4f4;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	background: white;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+	padding: 20px;
+	/* margin: 20px; */
+	border-radius: 5px
+}
